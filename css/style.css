@@ -1,0 +1,89 @@
+@media all and (max-width: 768px){
+	.item{
+		max-width: initial;
+		max-height: initial;
+		width: 90vw;
+		height:calc(90vw);
+	}
+	.img_link{
+		margin: 5px 0;
+	}
+}
+@media all and (min-width: 1200px){
+	.img_link:hover{
+		opacity: 1;
+		transform: scale(1.2) rotate(05deg);
+		z-index: 10;
+		box-shadow: 0 0 200px 30px rgba(100,0,0,0.4);
+	}
+}
+@font-face {
+    font-family: "minecraft";
+    src: url(../font/minecraft.ttf) format('truetype');
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #eee;
+}
+.main{
+	background-color: #fff;
+	display: flex;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 0 10px 1px rgba(0, 0, 0, 0.3);
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.item{
+	max-width: 490px;
+	max-height: 265px;
+	height: calc(95vw / 16 * 9 );
+	width: calc(90vw - 10px);
+	background-color: darkolivegreen;
+	background-position: center;
+	background-size: cover;
+}
+.heading{
+	display: inline;
+	font-size: 48px;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 65%;
+	font-family: "minecraft";
+    color: rgb(167, 199, 250);
+}
+.img_link{
+	display: block;
+	opacity: 0.6;
+	transition: opacity 0.6s ease, transform 0.6s ease-in, box-shadow 0.3s ease-out;
+	margin: 5px;
+}
+.gallery2 {
+	display: inline;
+	font-size: 32px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 18px;
+	width: 35%;
+	font-family: "minecraft";
+    color: rgb(167, 199, 250);
+}
+.footer {
+	background-color: gray;
+	display: block;
+	width: 100%;
+	margin: auto;
+	max-width: 1000px;
+	font-size: 25px;
+	font-family: "minecraft";
+	color: rgb(19, 44, 84);
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
